@@ -19,7 +19,7 @@
   font-family: fantasy, cursive;
 }
 
-@media (max-width:768px) {
+@media (max-width: 768px) {
 
 .header { text-align: center;
 }
@@ -59,16 +59,16 @@
 }
 
 .action__list {
-  margin:0;
+  margin: 0;
   padding: 0px;
 }
 
 .action__item {
-  list-style:none;
+  list-style: none;
 }
 
 .add-action__task, .action__task, .btn{
-  outline:none;
+  outline: none;
 }
 
 .btn {
@@ -155,7 +155,7 @@
   width: 226px
 }
 
-.action__item  > .action__btn-delete :hover {
+.action__item  > .action__btn-delete:hover {
   color: #CF2323;
 }
 
@@ -178,14 +178,14 @@
 
 /* Edit Task */
  .action__task {
-  display:none;
+  display: none;
 }
 
 .editMode .action__task {
-  display:inline-block;
-  width:224px;
+  display: inline-block;
+  width: 224px;
 }
 
 .editMode .action__label {
-  display:none;
+  display: none;
 }
