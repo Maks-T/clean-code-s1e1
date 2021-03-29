@@ -170,8 +170,8 @@
 
 .remove-img:hover {
   transform: rotateZ(0);
-  filter: invert(23%) sepia(96%) saturate(7446%) hue-rotate(2deg);
-    brightness(103%) contrast(122%);
+  filter: invert(23%) sepia(96%) saturate(7446%) hue-rotate(2deg)
+      brightness(103%) contrast(122%);
 }
 
 /* Completed */
