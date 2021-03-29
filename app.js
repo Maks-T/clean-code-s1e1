@@ -8,7 +8,7 @@
 // Event handling, user interaction is what starts the code execution.
 
 let taskInput = document.getElementById("new-task"); //Add a new task.
-let addButton = document.getElementsByTagName("button")[0]; //first button
+let addButton = document.querySelector(".add-action__btn"); //first button
 let incompleteTaskHolder = document.getElementById("incomplete-tasks"); //ul of #incompleteTasks
 let completedTasksHolder = document.getElementById("completed-tasks"); //completed-tasks
 
@@ -46,6 +46,7 @@ let createNewTaskElement = function (taskString) {
   deleteButton.className = "action__btn-delete btn";
   deleteButtonImg.src = "./remove.svg";
   deleteButtonImg.className = "remove-img";
+  deleteButtonImg.alt = "remove";
   deleteButton.appendChild(deleteButtonImg);
 
   //and appending.
@@ -81,10 +82,10 @@ let editTask = function () {
   let editInput = listItem.querySelector("input[type=text]");
   let label = listItem.querySelector("label");
   let editBtn = listItem.querySelector(".action__btn-edit");
-  let containsClass = listItem.classList.contains("editMode");
-  //If class of the parent is .editmode
+  let containsClass = listItem.classList.contains("edit-mode");
+  //If class of the parent is .edit-mode
   if (containsClass) {
-    //switch to .editmode
+    //switch to .edit-mode
     //label becomes the inputs value.
     label.innerText = editInput.value;
     editBtn.innerText = "Edit";
@@ -93,8 +94,8 @@ let editTask = function () {
     editBtn.innerText = "Save";
   }
 
-  //toggle .editmode on the parent.
-  listItem.classList.toggle("editMode");
+  //toggle .edit-mode on the parent.
+  listItem.classList.toggle("edit-mode");
 };
 
 //Delete task.
