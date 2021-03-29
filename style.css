@@ -24,7 +24,7 @@
   .header {
     text-align: center;
   }
-  
+
 }
 
 .main {
@@ -185,11 +185,11 @@
   display: none;
 }
 
-.editMode .action__task {
+.edit-mode .action__task {
   display: inline-block;
   width: 224px;
 }
 
-.editMode .action__label {
+.edit-mode .action__label {
   display: none;
 }
