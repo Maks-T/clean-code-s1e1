@@ -114,7 +114,7 @@ let taskCompleted = function () {
 
   //Append the task list item to the #completed-tasks
   let listItem = this.parentNode;
-  console.log(listItem);
+ 
   completedTasksHolder.appendChild(listItem);
   bindTaskEvents(listItem, taskIncomplete);
 };
